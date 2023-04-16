@@ -1,0 +1,41 @@
+p{
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+.gates{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    perspective: 500px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-size: 80px;
+}       
+.left, .right{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+.right{
+    right: 0;
+    transform-origin: right center;
+    background-color: red;
+}       
+.left{
+    left: 0;
+    transform-origin: left center;
+    background-color: blue;
+}   
+.gates:hover .left, .gates:hover .right{
+    transition: 2s;
+}     
+.gates:hover .left{
+    transform: rotateY(80deg);
+}
+.gates:hover .right{
+    transform: rotateY(-80deg);
+}
