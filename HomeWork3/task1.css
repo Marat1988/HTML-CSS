@@ -1,0 +1,78 @@
+.circle{
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+    border: 3px solid;
+    position: relative;
+    border-radius: 200px;
+    background-image: url("https://i.pinimg.com/originals/59/26/6c/59266cc2a98cfbc8eba259287887fd09.jpg");
+    background-position: center;
+    background-size: cover;
+}
+/*.point{
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 2px;
+}*/
+.minuteHand, .hourHand {
+    width: 45%;
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-color: blue;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    animation-name: animationHand;
+    animation-duration: 12s;;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}  
+.hourHand{
+    width: 25%;
+    border-color: red;
+    animation-duration: 144s;        
+}
+@keyframes animationHand {
+
+    8.33%{
+        transform: rotate(-60deg);
+    }
+    16.67%{
+        transform: rotate(-30deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    33.33%{
+        transform: rotate(30deg);
+    }
+    41.67%{
+        transform: rotate(60deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    58.33%{
+        transform: rotate(120deg);
+    }
+    66.67%{
+        transform: rotate(150deg);
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    83.33%{
+        transform: rotate(210deg);
+    }
+    91.67%{
+        transform: rotate(240deg);
+    }
+    100%{
+        transform: rotate(270deg);
+    }
+}
