@@ -1,0 +1,39 @@
+.chat{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    width: 70%;
+    grid-gap: 15px;
+}
+.message-from, .message-to{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    background-color:skyblue;
+    padding: 15px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.message-to{
+    background-color: pink;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 0px;
+}
+.recipient, .sender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+.sender p{
+    text-align: right;
+}
+.timeUserMessage{
+    color: darkgrey;
+} 
