@@ -1,0 +1,21 @@
+.grid{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+}
+.container{
+    padding-bottom: 15px;
+}
+.title, .content{
+    text-align: center;
+    padding: 30px;
+    background-color: #cfcaca;
+    font-weight: bold;
+}
+.content{
+    text-align: justify;
+    background-color: azure;
+    font-weight: normal;
+    padding: 10px;
+}
