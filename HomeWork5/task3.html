@@ -3,68 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="task3.css">
     <style>
-        html, body{
-            width: 100%;
-            height: 100%;
-            overflow-x: hidden;
-            margin: 0px;
-            padding: 0px;
-        }
-        .title{
-            background-color: green;
-            padding-left: 10px;
-            font-weight: bold;
-            padding-top: 10px;
-            font-size: 25px;
-        }
-        
-        .grid{
-            display: grid;
-            width: 100%;
-            height: 100%;
-            grid-template-rows: 1fr 95%;
-        }
-        .container{
-            display: flex;
-            overflow: auto;
-            grid-area: 20px;
-            background-color:chartreuse;
-                
-        }
-        .block{
-            flex: 0 0 400px;
-            overflow-x: hidden;
-            overflow-y: auto
-            border: 1px solid;
-            margin: 15px;
-            padding: 25px;
-            border-radius: 10px;
-            background-color: darkgrey;
-
-        }
-        .task{
-            border: 1px solid;
-            background-color: antiquewhite;
-            border-radius: 10px;
-            padding: 5px;
-        }
-        .taskFooter{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            column-gap: 5px;
-        
-        }
-        .task img{
-            height: 20px;
-            width: 20px;
-        }
-   
-        .last {
-       align-self: flex-end;
-        }
-        
     </style>
 </head>
 <body>
@@ -77,32 +17,623 @@
             <div class="task">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ad?</p>
                 <div class="taskFooter">
-                    <!--<div class="msg"><img src="images/justify_26.png"></div>
-                    <div><img src="images/checkbox_26.png" alt=""></div>
-                    <div class="msg task1">4/8</div>
-                    <div class=""><img src="images/attach_26.png" ></div>
-                    <div class="msg task1">2</div>
-                    <div><img src="images/comments_26.png"></div>
-                    <div class="msg task1">4</div>-->
-                    <div class="last"><img src="images/avatar_1.png" ></div>
-                    
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/8
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            2
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/comments_26.png">
+                        </div>
+                        <div class="icon description">
+                            4
+                        </div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quibusdam dolore aspernatur, nisi deleniti. Sint?</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                            0/3
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            7
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit corporis reiciendis omnis fuga suscipit laboriosam, laborum delectus ex harum minima.</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                            1/3
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            6
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           3/3
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            9
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>London is the capital of great Britain.</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           1/6
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            7
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Moscow, Moscow, throw your glasses at the wall And good fortune to us all Ho ho ho ho ho - hey!</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           2/3
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/5
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>London is the capital of great Britain.</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           1/6
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            7
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Moscow, Moscow, throw your glasses at the wall And good fortune to us all Ho ho ho ho ho - hey!</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           2/3
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/5
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_4.png">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="block">
             <h3>In progress</h3>
+            <div class="task">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ad?</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/8
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            2
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/comments_26.png">
+                        </div>
+                        <div class="icon description">
+                            4
+                        </div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ad?</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/8
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            2
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/comments_26.png">
+                        </div>
+                        <div class="icon description">
+                            4
+                        </div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ad?</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/8
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            2
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/comments_26.png">
+                        </div>
+                        <div class="icon description">
+                            4
+                        </div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="block">
             <h3>Test</h3>
+            <div class="task">
+                <p>London is the capital of great Britain.</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           1/6
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            7
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Moscow, Moscow, throw your glasses at the wall And good fortune to us all Ho ho ho ho ho - hey!</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           2/3
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/5
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="block">
             <h3>Flex</h3>
+            <div class="task">
+                <p>London is the capital of great Britain.</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           1/6
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            7
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Moscow, Moscow, throw your glasses at the wall And good fortune to us all Ho ho ho ho ho - hey!</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           2/3
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/5
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="block">
             <h3>Done</h3>
+            <div class="task">
+                <p>London is the capital of great Britain.</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           1/6
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            7
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Moscow, Moscow, throw your glasses at the wall And good fortune to us all Ho ho ho ho ho - hey!</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           2/3
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/5
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="block">
             <h3>Test task</h3>
+            <div class="task">
+                <p>London is the capital of great Britain.</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           1/6
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            7
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task">
+                <p>Moscow, Moscow, throw your glasses at the wall And good fortune to us all Ho ho ho ho ho - hey!</p>
+                <div class="taskFooter">
+                    <div class="msg"><img src="images/justify_26.png"></div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/checkbox_26.png">
+                        </div>
+                        <div class="icon description">
+                           2/3
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon">
+                            <img src="images/attach_26.png">
+                        </div>
+                        <div class="icon description">
+                            4/5
+                        </div>
+                    </div>
+                    <div class="msg">
+                        <div class="icon"></div>
+                        <div class="icon description"></div>
+                    </div>
+                    <div class="msg last">
+                        <div class="icon">
+                            <img src="images/avatar_1.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div> 
  </div>
