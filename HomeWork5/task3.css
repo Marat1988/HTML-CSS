@@ -25,8 +25,7 @@ html, body{
 }
 .container{
     display: flex;
-    overflow: auto;
-    grid-area: 20px;         
+    overflow: auto;      
 }
 .block{
     flex: 0 0 400px;
