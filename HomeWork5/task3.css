@@ -13,6 +13,8 @@ html, body{
     padding-top: 10px;
     font-size: 25px;
     padding-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
 }
         
 .grid{
@@ -36,6 +38,9 @@ html, body{
     border-radius: 10px;
     background-color: darkgrey;
 }
+.block h3{
+    margin-top: 0px;
+}
 .task{
     border: 1px solid;
     margin-bottom: 10px;
@@ -53,10 +58,10 @@ html, body{
     height: 25px;
     width: 25px;
 }
-.last{
+.notificationLast{
     text-align: right;
 }
-.last img{
+.notificationLast img{
     height: 60px;
     width: 60px;
 }
