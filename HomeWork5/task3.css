@@ -12,13 +12,14 @@ html, body{
     font-weight: bold;
     padding-top: 10px;
     font-size: 25px;
+    padding-bottom: 10px;
 }
         
 .grid{
     display: grid;
     width: 100%;
     height: 100%;
-    grid-template-rows: 5% 95%;
+    grid-template-rows: 0fr 1fr;
 }
 .container{
     display: flex;
