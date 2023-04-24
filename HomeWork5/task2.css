@@ -11,15 +11,15 @@
     background-color: pink;
     background-color: skyblue;
     padding: 15px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 25px;
 }
 .message-to{
     background-color: pink;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 25px;
 }
 .recipient, .sender{
     display: flex;
