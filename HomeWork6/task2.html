@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <form>
+       <h3>Inputs</h3>
+       <input type="text" id="someText" name="userSomeText" value="disabled text" disabled/>
+       <input type="text" id="validText" name="validText" value="valid text" pattern="valid text" required minlength="1"/>
+       <input type="text" id="validText" name="validText" value="invalid text" pattern="valid text" required minlength="1"/>
+       <h3>Check boxes</h3>
+       <div class="container">
+          <div class="column"><input type="checkbox"/></div>
+          <div class="column">Subscribe</div>
+          <div class="column"><input type="checkbox" checked/></div>
+          <div class="column">Subscribe</div>      
+       </div>
+       <h3>Radio buttons</h3>
+       <div class="container">
+          <div class="column">Gender</div> 
+          <div class="column"><input type="radio" value="male" id="gender1" name="sex" checked/></div>
+          <div class="column">Male</div>
+          <div class="column"><input type="radio" value="female" id="gender2" name="sex"/></div>
+          <div class="column">Female</div>
+       </div>
+       <h3>Buttons</h3>
+       <button class="greenBackColor">Active</button>
+       <button class="greenBackColorHover" name="greenBackColorHover">Hover</button>
+       <button class="redBackColor">Danger</button>
+       <button class="redBackColorHover" name="redBackColorHover">Hover</button>
+       <button class="disabled" disabled>Disabled</button>
+    </form>
+</body>
+</html>
