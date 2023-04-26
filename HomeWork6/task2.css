@@ -30,7 +30,6 @@ input[type="text"]:valid {
     align-items: center;
 }
 
-
 input[type="checkbox"]{
     appearance: none;
     height: 26px;
@@ -69,7 +68,6 @@ input[type="radio"]:checked{
     background-clip:content-box;
 }
 
-
 input[type="checkbox"]:checked::before{
     margin: 0;
     background-color: green;
@@ -99,4 +97,14 @@ button[name="greenBackColorHover"]:hover{
 
 button[name="redBackColorHover"]:hover{
     background-color: #97293f;
+}
+
+.plus, .minus{
+    width: 50px;
+    height: 50px;
+}
+textarea{
+    height: 300px;
+    width: 460px;
+    padding: 5px;
 }
