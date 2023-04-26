@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    <form>
+       <div class="container">
+           <div class="registration">
+              <h3>Registration form</h3>
+              <div class="row">
+                 <div class="icon">
+                     <label for="idUserName"><img src="images/username.png" alt="User name"></label>
+                 </div>
+                 <div class="data">
+                    <input type="text" id="idUserName" name="userName" placeholder="Username"> 
+                 </div>
+              </div>
+              <div class="row">
+                 <div class="icon">
+                     <label for="email"><img src="images/email.png" alt="User email"></label>
+                 </div>
+                 <div class="data">
+                    <input type="text" id="email" name="userEmail" placeholder="Email address"> 
+                 </div>
+              </div>
+              <div class="row">
+                 <div class="icon">
+                     <label for="password"><img src="images/pswd.png" alt="User password"></label>
+                 </div>
+                 <div class="data">
+                    <input type="password" id="password" name="userPassword" placeholder="Password">
+                 </div>
+                 <div class="confirmPassword">
+                    <input type="password" id="password" name="userPassword" placeholder="Confirm password">
+                 </div>
+              </div>
+           </div>
+           <div class="personalData">
+              <h3>Personal details</h3>   
+              <div class="row">
+                 <div class="icon"></div>
+                 <div class="data">
+                    <input type="text" id="idFirstName" name="userFirstName" placeholder="First name"> 
+                 </div>
+                 <div class="data">
+                    <input type="text" id="idLastName" name="userLastName" placeholder="Last name"> 
+                 </div>
+              </div>
+              <div class="row">
+                 <div class="icon"></div>
+                 <div class="data">
+                     <select name="userSex" id="sex">
+                         <option>Male</option>
+                         <option>Female</option>
+                     </select>
+                 </div>
+                 <div class="data">
+                    <input type="date" id="idSex" name="userSex" value="03.07.1988"> 
+                 </div>
+              </div>
+           </div>
+       </div>
+       <div class="checkListChoose">
+          <div>
+              <input type="checkbox" id="checkOffer" name="userCheckOffer">
+               <label for="checkOffer">I want to receive mews and special offers</label>
+          </div>
+          <div>
+              <input type="checkbox" id="checkTerms" name="userCheckTerms">
+               <label for="checkTerms">I agree with the Terms and Conditions</label>
+          </div>
+       </div>
+       <hr/>
+       <div class="buttons">
+           <input type="submit" id="submitBtn" value="SUBMIT">
+       </div>
+    </form>
+</body>
+</html>

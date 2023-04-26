@@ -1,0 +1,94 @@
+html{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+form{
+    width: 90%
+}
+.container{
+    display: flex;
+    flex-direction: column
+    gap: 15px;
+}
+.registration, .personalData, .checkListChoose{
+    flex: 1;
+    padding-left: 10px;
+}
+.container input, .container select{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 20px;
+}
+
+/*Registration form*/
+.registration .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.registration .row .icon{
+    flex: 0;
+}
+.registration .row .data{
+    flex: 1;
+}
+
+.registration .row .confirmPassword{
+    flex: 1;
+}
+
+.registration label img, .icon {
+    width: 30px;
+    height: 30px;
+}
+
+.registration .row{
+    margin-top: 20px;
+}
+
+/*Personal details*/
+.personalData .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.personalData .row .icon{
+    flex: 0;
+}
+
+.personalData .row .data{
+    flex: 1;
+}
+
+.personalData .row{
+    margin-top: 20px;
+}
+
+/*check list*/
+.checkListChoose{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.checkListChoose div{
+    padding-bottom: 10px;
+}
+
+/*buttons*/
+.buttons{
+    text-align: right;
+}
+
+input[id="submitBtn"]{
+    width: 15%;
+    padding: 20px;
+    background-color: forestgreen;
+    color: #fff;
+    font-size: 20px;
+}
+
