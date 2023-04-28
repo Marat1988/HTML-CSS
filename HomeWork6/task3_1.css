@@ -62,3 +62,9 @@ input[id="submitBtn"]{
     color: #fff;
     font-size: 20px;
 }
+
+@media screen and (max-width: 900px) {
+    .userData{
+        flex-direction: column;
+    }
+}
