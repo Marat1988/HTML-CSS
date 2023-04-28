@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="task3_1.css">
+</head>
+<body>
+    <form>
+       <div class="userData">
+          <div class="registration">
+              <h3>Registration form</h3>
+              <div class="row">
+                 <div class="icon">
+                      <label for="userName"><img src="images/username.png" alt="useName"></label>
+                  </div>
+                  <input type="text" id="userName" name="inputUserName" placeholder="Username"/>
+              </div>
+              <div class="row">
+                 <div class="icon">
+                      <label for="email"><img src="images/email.png" alt="useName"></label>
+                  </div>
+                  <input type="email" id="email" name="inputUserEmail" placeholder="Email address"/>
+              </div>
+              <div class="row">
+                 <div class="icon">
+                      <label for="password"><img src="images/pswd.png" alt="useName"></label>
+                 </div>
+                  <input type="password" id="password" name="userPassword" placeholder="Password"/>
+                  <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password"/>            
+              </div>
+          </div>
+          <div class="personalData">
+              <h3>Personal details</h3>
+              <div class="row">
+                  <input type="text" id="firtsName" name="inputFirstname" placeholder="First name"/>
+                  <input type="text" id="lastName" name="inputLastName" placeholder="Last name"/>
+              </div>
+              <div class="row">
+                  <select name="userName" id="sex">
+                      <option>Male</option>
+                      <option>Female</option>
+                  </select>
+                  <input type="date" id="date" name="userDate"/>     
+              </div>   
+          </div>
+       </div>
+       <div class="checkOpinion">
+           <div>
+              <input type="checkbox" id="checkOffer" name="userCheckOffer"/>
+              <label for="checkOffer">I want to receive news and special offers</label>    
+           </div>
+           <div>
+              <input type="checkbox" id="checkTerms" name="userCheckTerms">
+              <label for="checkTerms">I agree with the Terms and Conditions</label> 
+           </div>
+       </div>
+       <hr/>
+       <div class="buttons">
+           <input type="submit" id="submitBtn" value="SUBMIT">
+       </div>
+    </form>
+</body>
+</html>

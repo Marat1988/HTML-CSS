@@ -1,0 +1,64 @@
+html{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+
+form{
+    width: 90%;
+}
+/*userData*/
+.userData{
+    /*border: 2px solid;*/
+    display: flex;
+    gap: 15px;
+}
+
+.userData .registration, .userData .personalData{
+    flex: 1;
+    /*border: 1px solid red*/;
+}
+
+.userData .row{
+    padding-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.userData label img{
+    width: 20px;
+    height: 20px;
+}
+
+.userData input, .userData select{
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 20px;
+}
+
+/*checkOpinion*/
+.checkOpinion{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.checkOpinion div{
+    padding-top: 15px;
+}
+
+/*buttons*/
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[id="submitBtn"]{
+    flex: 0 1 150px;
+    padding: 20px;
+    background-color: forestgreen;
+    color: #fff;
+    font-size: 20px;
+}
