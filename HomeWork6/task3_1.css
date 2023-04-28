@@ -63,6 +63,14 @@ input[id="submitBtn"]{
     font-size: 20px;
 }
 
+/*Подгон под разрешения*/
+@media screen and (max-width: 600px) {
+    .userData .row{
+        flex-wrap: wrap;
+    }
+    
+}
+
 @media screen and (max-width: 900px) {
     .userData{
         flex-direction: column;
