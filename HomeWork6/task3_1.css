@@ -68,7 +68,6 @@ input[id="submitBtn"]{
     .userData .row{
         flex-wrap: wrap;
     }
-    
 }
 
 @media screen and (max-width: 900px) {
