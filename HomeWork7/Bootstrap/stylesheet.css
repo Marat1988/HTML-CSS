@@ -1,0 +1,32 @@
+body{
+    background-color: blanchedalmond;
+}
+h1, h2{
+    text-align: center;
+    margin: 25px;
+}
+h2{
+    color: red;
+}
+.rewards{
+    text-align: right;
+}
+.data3{
+    text-align: left;
+}
+
+.curentHomeWork{
+    background-color: aliceblue;
+}
+.reviewed{
+    background-color: chartreuse;
+}
+.reviewed button, .underReview button{
+    width: 50%;
+}
+.underReview{
+    background-color: cyan;
+}
+.overdue{
+    background-color:coral;
+}
