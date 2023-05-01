@@ -5,8 +5,11 @@
     <title>Портфолио</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!--https://myrusakov.ru/jquery-fancybox.html-->
 </head>
 <body>
+  
 <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Панель навигации</a>
@@ -16,16 +19,19 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Мои работы</a>
+          <a class="nav-link active" aria-current="page" href="#myWorks">Мои работы</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Контакты для связи</a>
+          <a class="nav-link active" href="#contact">Контакты для связи</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Видео</a>
+          <a class="nav-link active" href="#photo">Фото с ЧМ-2018 г. Калининград</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Иузыка</a>
+          <a class="nav-link active" href="#myVideo">Видео. Фан-зона. Калининград-2018.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#myLiveMusic" >Музыка</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -35,6 +41,13 @@
     </div>
   </div>
 </nav>
+  <video controls width="250" autoplay>
+    <source src="video/TOPAcademy.mp4" type="video/mp4" />
+    <p>
+       Your browser doesn't support HTML video. Here is a
+       <a href="video/TOPAcademy.mp4">link to the video</a> instead.
+    </p>
+  </video>
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -45,9 +58,9 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <p>Добрый день. Меня зовут Марат. Родился и вырос в г. Калининграде. Учился в школе №2. C 2004 пошел учиться в академию народного хозяйства при правительстве РФ. Кафедра АСОИиУ (автоматизированные системы обработки информации и управления). В то время эта кафедра тогда только открывалась. В общем, предодавали нам тогда всякую фигню (экономика, бух. учет и т.д.). Из языков программирования был только Delphi и Visual Basic. И база данных Micrisoft Access. Собственно, больше особо вспомнить и нечего. Закончил я данное учебное заведение в 2008 году. В дипломе значится специальность "техник". Что за "техник" я и сам толком объяснить не могу. Но зато диплом о среднем профессиональном образовании есть:) Сразу же после окончания академии пошел учиться в КГТУ (вечернее отделение). Кафедра "Прикладная информатика (в экономике)". Параллельно работал. Там тоже особо вспомнить нечего. Программирования было по-минимуму. В основном были дисциплины связанные с экономикой. Закончил КГТУ в 2012 году. В дипломе значиться специальность "Информатик-экономист". Ура! У меня есть диплом о высшем образовании:) В 2012 года и по сей день работаю в компании ООО "Три брата".</p>
+        <p>Добрый день. Меня зовут Марат. Родился и вырос в г. Калининграде. Учился в школе №2. C 2004 пошел учиться в академию народного хозяйства при правительстве РФ. Кафедра АСОИиУ (автоматизированные системы обработки информации и управления). В то время эта кафедра тогда только открывалась. В общем, предодавали нам тогда всякую фигню (экономика, бух. учет и т.д.). Из языков программирования был только Delphi и Visual Basic. И база данных Microsoft Access. Собственно, больше особо вспомнить и нечего. Закончил я данное учебное заведение в 2008 году. В дипломе значится специальность "техник". Что за "техник" я и сам толком объяснить не могу:) Но зато диплом о среднем профессиональном образовании есть:) Сразу же после окончания академии пошел учиться в КГТУ (вечернее отделение). Кафедра "Прикладная информатика (в экономике)". Параллельно работал. Там тоже особо вспомнить нечего. Программирования было по-минимуму. В основном были дисциплины связанные с экономикой. Закончил КГТУ в 2012 году. В дипломе значиться специальность "Информатик-экономист". Ура! У меня есть диплом о высшем образовании:) В 2012 года и по сей день работаю в компании ООО "Три брата".</p>
         <p>Разработчик. Стэк технологий: C#, SQL, MS SQL Server, Delphi.</p>
-        <p>В 2021 году решил пойти учиться в академию "Шаг" (сейчас это TOP). Цель моего обучения - это получения знаний в области программирования (собственно ради этого я и пошел снова учиться). После окончания учебы планирую уйти с текущего места работы и устроиться на ту работу, где я бы смог профессионально развиваваться в области разработки программного обеспечения. Может и академия поможет устроиться на работу:)</p>
+        <p>В 2021 году решил пойти учиться в академию "Шаг" (сейчас это TOP). Цель моего обучения - это получения знаний в области программирования (собственно ради этого я и пошел снова учиться). После окончания учебы планирую уйти с текущего места работы и устроиться на ту работу, где я бы смог профессионально развиваться в области разработки программного обеспечения. Может и академия поможет устроиться на работу:)</p>
         <p>Хобби: футболл, музыка.</p>
       </div>
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -58,7 +71,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>Мои работы</h2>
+        <h2 id="myWorks">Мои работы</h2>
       </div>
     </div>
   </div>
@@ -72,7 +85,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2>Контакты для связи</h2>
+        <h2 id="contact">Контакты для связи</h2>
       </div>
     </div>
   </div>
@@ -85,6 +98,85 @@
       </div>
     </div>
   </div>
+  
+  <!--Фото-->
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+                <h2 id="photo">Фанзона. Калининград-2018</h2>
+                <p>Groups are created by adding the same <code>data-fancybox</code> attribute value</p>
+  
+                <p class="imglist">
+                  <a href="images/1.jpg" data-fancybox="images" data-caption="Фан-зона. Калининград-2018">
+                    <img src="images/1.jpg" style="width: 240px; height: 160px;" />
+                  </a>
+                  <a href="images/2.jpg" data-fancybox="images" data-caption="Фан-зона. Калининград-2018">
+                    <img src="images/2.jpg" style="width: 240px; height: 160px;" />
+                  </a>
+                  <a href="images/3.jpg" data-fancybox="images" data-caption="Фан-зона. Калининград-2018">
+                    <img src="images/3.jpg" style="width: 240px; height: 160px;" />
+                  </a>
+                  <a href="images/4.jpg" data-fancybox="images" data-caption="Фан-зона. Калининград-2018">
+                    <img src="images/4.jpg" style="width: 240px; height: 160px;" />
+                  </a>
+                  <a href="images/5.jpg" data-fancybox="images" data-caption="Фан-зона. Калининград-2018">
+                    <img src="images/5.jpg" style="width: 240px; height: 160px;" />
+                  </a>
+                  <a href="images/6.jpg" data-fancybox="images" data-caption="Фан-зона. Калининград-2018">
+                    <img src="images/6.jpg" style="width: 240px; height: 160px;" />
+                  </a>
+              </p>
+          </div>
+      </div>  
+  </div>
+  
+  <!--Видео-->
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <h2 id="myVideo">Видео. ЧМ-2018</h2>
+              <p class="imglist">
+                <a data-fancybox data-small-btn="true" href="https://youtu.be/0ObKosfeQlU">
+                    <img class="card-img-top img-fluid" src="images/logo2018.jpeg" style="width: 240px; height: 160px;" />
+                </a>
+              </p>                
+          </div>
+      </div>
+  </div>
+  
+  <!--Музон-->
+  <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <h2 id="myLiveMusic">Музыка</h2>
+              <p>Король и шут. Лесник</p>
+              <audio controls>
+                  <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+                  <source src="music/lesnik.mp3" type="audio/mpeg">
+                  Тег audio не поддерживается вашим браузером. 
+                  <a href="music/lesnik.mp3">Скачайте музыку</a>.
+              </audio>
+              <p>Король и шут. Танец злобного гения</p>
+              <audio controls>
+                  <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+                  <source src="music/tanec-zlobnogo-genija.mp3" type="audio/mpeg">
+                  Тег audio не поддерживается вашим браузером. 
+                  <a href="music/tanec-zlobnogo-genija.mp3">Скачайте музыку</a>.
+              </audio>
+              <p>Сектор газа. Лирика</p>
+              <audio controls>
+                  <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+                  <source src="music/lirika.mp3" type="audio/mpeg">
+                  Тег audio не поддерживается вашим браузером. 
+                 <a href="music/lirika.mp3">Скачайте музыку</a>.
+              </audio>
+          </div>
+      </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
