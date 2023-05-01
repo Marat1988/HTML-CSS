@@ -1,0 +1,56 @@
+body{
+    background-color: blanchedalmond;
+}
+h1, h2{
+    text-align: center;
+    margin: 25px;
+}
+h2{
+    color: red;
+}
+.rewards{
+    text-align: right;
+}
+.data3{
+    text-align: left;
+}
+.currentArea, .reviewedArea, .underReviewArea, .overdueArea{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.curentHomeWork{
+    background-color:yellow;
+}
+.reviewed, .reviewedArea{
+    background-color: chartreuse;
+}
+.reviewed button, .underReview button{
+    width: 50%;
+}
+.underReview, .underReviewArea{
+    background-color: cyan;
+}
+.overdue, .overdueArea{
+    background-color:coral;
+}
+.descriptionColor{
+    text-align: right;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.descriptionColor p{
+    font-weight: bold;
+}
+.score{
+    position: absolute;
+    right: 5%;
+    width: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
