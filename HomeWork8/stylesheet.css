@@ -103,6 +103,10 @@ ul li {
    border: 1px solid green;
 }
 
+.input-group button:hover{
+    background-color: #59BEC9;
+}
+
 .input-group input::placeholder{
     color: #fff;
 }
