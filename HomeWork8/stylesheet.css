@@ -195,3 +195,16 @@ footer{
 .footerSite .row .iconsSocialNetworkFooter{
     align-self:center;
 }
+
+/*Подгон под разрешения*/
+@media screen and (max-width: 1100px) {
+    .contact{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .contact{
+        margin-bottom: 5px;
+    }
+}
